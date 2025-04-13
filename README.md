@@ -1,36 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Tech Trend
 
-## Getting Started
+This project is a small demo that I used to see how MongoDB Atlas and Next.js can interact to produce real-time metrics. A natural extension of this project would be adding more complex metrics, improving the UI and, of course, collecting data from real websites and other data sources.
 
-First, run the development server:
+## Why MongoDB
+
+MongoDB is my choice for this project because it is schema-less, which gives flexibility when collecting and storing varied or evolving data. MongoDB Atlas makes it easy to deploy and manage a cloud database with minimal setup. I also considered its integration with JS and Node.js, and libraries like Mongoose make it easy to work with. It is also especially good for handling large volumes of semi-structured and real-time data like tech trends. 
+
+## Requirements
+
+To run this project you need:
+- npm (use `npm install` to get all the dependencies)
+- MongoDB Atlas URI (place MONGODB_URI in a **.env** file in the root)
+
+Now, you can simply run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+By default, you will find the project running on `http://localhost:3000/`. Have fun playing with it!
