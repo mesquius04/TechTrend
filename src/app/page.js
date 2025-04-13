@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div id ="main_container">
       <h1 id ="title">Trending Technologies</h1>
-      <AddRandomDataButton onSuccess={fetchTrends} />
+      <AddRandomDataButton onSuccess={{fetchTrends, fetchMonthly, fetchWorstMonthly, fetchTodayTrends}} />
       <div id="big_container">
         <div className="small_container">
           <h3 id = "cat_title">Top Trends This Month</h3>

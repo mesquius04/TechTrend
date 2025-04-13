@@ -46,7 +46,7 @@ export async function POST() {
         const getRandomDate = () => {
             const now = new Date();
             const twoMonthsAgo = new Date();
-            twoMonthsAgo.setMonth(now.getMonth() - 2);
+            twoMonthsAgo.setMonth(now.getDay() - 30);
             const randomTime = twoMonthsAgo.getTime() + Math.random() * (now.getTime() - twoMonthsAgo.getTime());
             return new Date(randomTime);
           };          

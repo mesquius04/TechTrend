@@ -1,7 +1,8 @@
 'use client';
-import { useState } from 'react';
+import { useState } from 'react'
 
 export default function AddRandomData({ onSuccess }) {
+  const { fetchTrends, fetchMonthly, fetchWorstMonthly, fetchTodayTrends } = onSuccess;
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -12,7 +13,10 @@ export default function AddRandomData({ onSuccess }) {
       const res = await fetch('/api/trending', { method: 'POST' });
       const data = await res.json();
       setMessage(data.message || 'data pushed');
-      if (onSuccess) onSuccess();
+      fetchTrends();
+      fetchMonthly();
+      fetchWorstMonthly();
+      fetchTodayTrends();
     } catch (err) {
       setMessage('error pushing data');
     } finally {
