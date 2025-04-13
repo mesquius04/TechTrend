@@ -19,3 +19,7 @@ npm run dev
 ```
 
 By default, you will find the project running on `http://localhost:3000/`. Have fun playing with it!
+
+## Images
+
+![image](https://github.com/user-attachments/assets/b0587b8a-f390-44a3-b632-ae4a5940b636)
