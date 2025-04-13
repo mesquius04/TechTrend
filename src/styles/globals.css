@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #232b25;
-    --foreground: #c2e0ca;
+    --foreground: rgb(216, 235, 200);
   }
 }
 
@@ -31,14 +31,22 @@ body {
   text-align: center;
 } 
 #title{
+  color: #c2e0ca;
   font-size:xx-large;
   margin-bottom: 12px;
 }
+#big_container{
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  flex-direction: row;
+}
 #cat_title{
   font-size: larger;
-  text-decoration: underline;
   margin-bottom: 4px;
-
+}
+.small_container{
+  padding: 4px;
 }
 #add_button{
   
@@ -72,10 +80,11 @@ body {
 #list{
   border: 1px solid black;
     font-size: large;
+    color: rgb(216, 235, 200);
     text-align: left;
     background-color: #00684a;
     justify-self: center;
-    width: 240px;
+    width: 264px;
     padding: 12px;
     padding-left: 16px;
     padding-right: 16px;
